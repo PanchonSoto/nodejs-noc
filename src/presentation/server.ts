@@ -12,6 +12,7 @@ export class Server {
             '*/5 * * * * *',
             ()=>{
                 new CheckService().execute('https://google.com');
+                // new CheckService().execute('http://localhost:3000/');
             }
         );
     }
