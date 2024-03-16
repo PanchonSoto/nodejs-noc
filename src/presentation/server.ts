@@ -11,7 +11,10 @@ export class Server {
         CronService.createJob(
             '*/5 * * * * *',
             ()=>{
-                new CheckService().execute('https://google.com');
+                new CheckService(
+                    ()=>console.log('success'),
+                    (error)=>console.log(error)
+                ).execute('https://google.com');
                 // new CheckService().execute('http://localhost:3000/');
             }
         );
