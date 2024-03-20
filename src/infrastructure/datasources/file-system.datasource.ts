@@ -11,7 +11,9 @@ export class FileSystemDataSource implements LogDataSource {
     private readonly mediumLogsPath = 'logs/logs-medium.log';
     private readonly highlLogsPath = 'logs/logs-high.log';
 
-    constructor() {}
+    constructor() {
+        this.createLogsFiles();
+    }
 
     private createLogsFiles = () => {
         if(!fs.existsSync(this.logPath)) {
