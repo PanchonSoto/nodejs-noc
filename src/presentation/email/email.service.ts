@@ -39,19 +39,19 @@ export class EmailService {
                 attachments: attachments
             });
             // console.log(sendInfo);
-            const log = new LogEntity({
-                level: LogSeverityLevel.low,
-                message: 'Email sent',
-                origin: 'email.service.ts'
-            });
+            // const log = new LogEntity({
+            //     level: LogSeverityLevel.low,
+            //     message: 'Email sent',
+            //     origin: 'email.service.ts'
+            // });
             // this.logRepository.saveLog(log);
             return true;
         } catch (error) {
-            const log = new LogEntity({
-                level: LogSeverityLevel.high,
-                message: 'Email sent',
-                origin: 'email.service.ts'
-            });
+            // const log = new LogEntity({
+            //     level: LogSeverityLevel.high,
+            //     message: 'Email sent',
+            //     origin: 'email.service.ts'
+            // });
             // this.logRepository.saveLog(log);
             return false;
         }
