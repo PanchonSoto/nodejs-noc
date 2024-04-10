@@ -46,8 +46,11 @@ export class Server {
         // emailService.sendEmailWithFileSystemLogs(
         //     ['pureschaos98@gmail.com','panshibe@gmail.com']
         // );
-        // const logs = await logRepository.getLogs(LogSeverityLevel.high);
-        // console.log(logs);
+        // const mLogs = await mongoLogRepository.getLogs(LogSeverityLevel.high);
+        // console.log('MONGOLOGS',mLogs);
+
+        // const pLogs = await postgresLogRepository.getLogs(LogSeverityLevel.high);
+        // console.log('PostgresLOGS',pLogs);
         
         // CronService.createJob(
         //     '*/5 * * * * *',
