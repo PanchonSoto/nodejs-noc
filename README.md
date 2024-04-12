@@ -6,14 +6,10 @@ with TypeScript
 # dev
 1. Clone the .env.template archive to .env
 2. Configure the environment variables
-
-```
-PORT=3000
-
-MAILER_EMAIL=
-MAILER_SECRET_KEY=
-
-PROD=false
-```
 3. Run the command ```npm install```
-4. Run ```npm run dev```
+4. Initialize the data bases with: ```docker compose up -d```
+5. Run ```npx prisma migrate dev```
+6. Run ```npm run dev```
+
+## Get Gmail Key
+[Google AppPasswords] (https://myaccount.google.com/u/0/apppasswords)
